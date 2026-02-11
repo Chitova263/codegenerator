@@ -1,0 +1,22 @@
+﻿{
+  "entities": [
+    {
+      "name": "Product",
+      "tableName": "Products",
+      "properties": [
+        { "name": "Id", "type": "int", "isPrimaryKey": true },
+        { "name": "Name", "type": "string", "maxLength": 100, "isRequired": true },
+        { "name": "Price", "type": "decimal", "precision": 18, "scale": 2 },
+        { "name": "CreatedAt", "type": "DateTime" }
+      ]
+    },
+    {
+      "name": "Category",
+      "tableName": "Categories",
+      "properties": [
+        { "name": "Id", "type": "int", "isPrimaryKey": true },
+        { "name": "Name", "type": "string", "maxLength": 50, "isRequired": true }
+      ]
+    }
+  ]
+}
