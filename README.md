@@ -1,3 +1,40 @@
+# TODO
+- Rewrute to generate C# code at Compile Time using Source Generators
+- Improve code
+- Migrate from angularJS
+- Use OpenApi spec to generate angular http client
+- 
+
+# Idea
+Configuration stored in DB
+```json
+{
+  "entities": [
+    {
+      "name": "Product",
+      "tableName": "Products",
+      "properties": [
+        { "name": "Id", "type": "int", "isPrimaryKey": true },
+        { "name": "Name", "type": "string", "maxLength": 100, "isRequired": true },
+        { "name": "Price", "type": "decimal", "precision": 18, "scale": 2 },
+        { "name": "CreatedAt", "type": "DateTime" }
+      ]
+    },
+    {
+      "name": "Category",
+      "tableName": "Categories",
+      "properties": [
+        { "name": "Id", "type": "int", "isPrimaryKey": true },
+        { "name": "Name", "type": "string", "maxLength": 50, "isRequired": true }
+      ]
+    }
+  ]
+}
+```
+
+
+
+
 > **LATEST FOR VERSION** see: https://github.com/capesean/codegenerator3
 
 # codegenerator
